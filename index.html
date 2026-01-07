@@ -52,27 +52,6 @@
     </div>
     <script src="decode.js"></script>
     <script src="_framework/blazor.webassembly.66stpp682q.js"></script>
-    <script>
-        Blazor.start({
-            loadBootResource: async function (type, name, defaultUri, integrity) {
-                if (type === 'dotnetwasm' && location.hostname !== 'localhost') {
-                    const response = await fetch(defaultUri + '.br', { cache: 'no-cache' });
-                    if (!response.ok) throw new Error(response.statusText);
-                    const buffer = await response.arrayBuffer();
-                    const decompressed = BrotliDecode(new Int8Array(buffer));
-                    return new Response(decompressed, { headers: { 'content-type': 'application/wasm' } });
-                }
-                return fetch(defaultUri); // all other resources
-            }
-        });
-    </script>
-    <script>
-        function copyToClipboard(e) {
-            var copyText = document.getElementById(e);
-            copyText.select();
-            navigator.clipboard.writeText(copyText.value);
-        }
-    </script>
 
     <script src="js/interop.js"></script>
 
