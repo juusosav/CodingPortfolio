@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/site.css" />
     <link href="CodingPortfolioWebsite.styles.css" rel="stylesheet" />
 
+    <!-- SPA routing for GitHub Pages -->
     <script type="text/javascript">
         (function (l) {
             if (l.search) {
@@ -31,7 +32,7 @@
                     );
                 }
             }
-        }(window.location));
+        }(window.location))
     </script>
 </head>
 
@@ -48,16 +49,15 @@
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="." class="reload">Reload</a>
-        <span class="dismiss">🗙</span>
+        <span class="dismiss">×</span>
     </div>
 
-    <script src="decode.js"></script>
-
-    <script src="_framework/blazor.webassembly.66stpp682q.js" autostart="false"></script>
+    <!-- Blazor WebAssembly -->
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>
         Blazor.start({
             loadBootResource: function (type, name, defaultUri, integrity) {
-                console.log(`Loading: '${type}', '${name}', '${defaultUri}', '${integrity}'`);
+                // dotnetjs / dotnetwasm / timezonedata: use default loading
                 switch (type) {
                     case 'dotnetjs':
                     case 'dotnetwasm':
@@ -69,8 +69,8 @@
             }
         });
     </script>
-    </script>
 
+    <!-- Site-specific JS -->
     <script src="js/interop.js"></script>
     <script src="js/culture.js"></script>
 
@@ -80,7 +80,14 @@
         (function () {
             emailjs.init("GiVCIaBf0ifptykxR");
         })();
+    </script>
 
+    <script>
+        function copyToClipboard(e) {
+            var copyText = document.getElementById(e);
+            copyText.select();
+            navigator.clipboard.writeText(copyText.value);
+        }
     </script>
 
 </body>
