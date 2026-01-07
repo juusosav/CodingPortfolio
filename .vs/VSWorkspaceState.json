@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\_framework"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\_framework\\blazor.webassembly.66stpp682q.js",
   "PreviewInSolutionExplorer": false
 }
