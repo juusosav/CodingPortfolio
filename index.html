@@ -50,10 +50,29 @@
         <a href="." class="reload">Reload</a>
         <span class="dismiss">🗙</span>
     </div>
+
     <script src="decode.js"></script>
+
     <script src="_framework/blazor.webassembly.66stpp682q.js" autostart="false"></script>
+    <script>
+        Blazor.start({
+            loadBootResource: async function (type, name, defaultUri, integrity) {
+                if (type === 'dotnetwasm' && location.hostname !== 'localhost') {
+                    // fetch Brotli compressed wasm if available
+                    const response = await fetch(defaultUri + '.br', { cache: 'no-cache' });
+                    if (!response.ok) throw new Error(response.statusText);
+                    const buffer = await response.arrayBuffer();
+                    const decompressed = BrotliDecode(new Int8Array(buffer));
+                    return new Response(decompressed, { headers: { 'content-type': 'application/wasm' } });
+                }
+                // all other resources load normally
+                return defaultUri;
+            }
+        });
+    </script>
 
     <script src="js/interop.js"></script>
+    <script src="js/culture.js"></script>
 
     <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -63,8 +82,6 @@
         })();
 
     </script>
-
-    <script src="js/culture.js"></script>
 
 </body>
 
