@@ -1,124 +1,153 @@
-CodingPortfolio
+# Coding Portfolio – Juuso Savolainen
 
-Personal portfolio website built with Blazor WebAssembly to showcase projects, technical skills, and development experience.
+This repository contains the source code for my personal developer portfolio, built with **Blazor WebAssembly** and deployed using **GitHub Pages** with automated CI/CD (coming soon).
 
-The site is designed as a single-page application with smooth navigation, responsive layout, and bilingual support (English / Finnish).
+The site is designed as a single-page application with smooth navigation, responsive layout, and bilingual support (English / Finnish). 
+The site showcases my skills, projects, and technical stack, and serves as a central hub for presenting my work.
 
-Live site:
-https://<your-username>.github.io/CodingPortfolio/
+**Live site:**  
+https://juusosav.github.io/CodingPortfolio/
 
-Overview
 
-This portfolio serves as both:
+---
 
-A professional presentation of my work
 
-A practical demonstration of modern .NET and frontend development skills
+# Overview
+
+This portfolio is a single-page application (SPA) built with modern .NET technologies.  
+It emphasizes clean architecture, localization support, and a professional deployment workflow.
 
 Key goals of the project:
+- Present projects and technical experience clearly
+- Demonstrate real-world Blazor WebAssembly usage
+- Showcase CI/CD and static hosting best practices
 
-Clean component architecture
+---
 
-Maintainable, scalable code structure
+## Technology Stack
 
-Production-ready deployment using GitHub Pages
+- **Blazor WebAssembly (.NET 10)**
+- **C#**
+- **ASP.NET Core**
+- **Bootstrap 5**
+- **JavaScript Interop**
+- **Localization (EN / FI)**
+- **GitHub Pages**
+- **GitHub Actions (CI/CD)**
 
-Technology Stack
+---
 
-Blazor WebAssembly
+## Features
 
-.NET
+- Single-page application with client-side routing
+- English and Finnish localization with runtime language switching
+- Responsive design for desktop and mobile
+- Project showcase section
+- Contact section with EmailJS integration
+- Automated deployment pipeline
 
-C#
+---
 
-ASP.NET Core concepts
+## Project Structure
 
-Bootstrap 5
+```bash
+CodingPortfolio/
+│
+├─ CodingPortfolioWebsite/
+│  ├─ Pages/                 # Blazor pages (About, Projects, etc.)
+│  ├─ Components/            # Reusable UI components
+│  ├─ Layout/                # Layouts and navigation
+│  ├─ wwwroot/               # Static assets (CSS, JS, images)
+│  ├─ Program.cs             # Application entry point
+│  └─ CodingPortfolioWebsite.csproj
+│
+├─ .github/
+│  └─ workflows/
+│     └─ deploy.yml          # GitHub Pages deployment workflow
+│
+└─ README.md
+```
 
-HTML / CSS
+## Development Setup
 
-JavaScript (interop)
+Prerequisites
 
-GitHub Pages
+- **.NET SDK 10.0 or newer**
+- **Git**
+- **A modern web browser (Chrome, Edge, Firefox)**
 
-Features
+---
 
-Single-page layout with smooth scroll navigation
+## Run Locally
 
-Component-based architecture
+Clone the repository:
 
-Bilingual support (English / Finnish)
+```bash
+git clone https://github.com/juusosav/CodingPortfolio.git
+cd CodingPortfolio
+```
 
-Dynamic hero text with animation
+Run the Blazor WebAssembly project:
 
-Project showcase with external links
+```bash
+dotnet run --project CodingPortfolioWebsite
+```
 
-Responsive design for desktop and mobile
+The application will be available at:
 
-Client-side localization using resource files
+```bash
+https://localhost
+```
 
-Deployed as a static site via GitHub Pages
+---
 
-Project Structure
+# Deployment
 
-main branch
-Contains the full Blazor WebAssembly source code:
+The application is deployed as a static site using GitHub Pages.
 
-Components
+Deployment is fully automated via GitHub Actions (coming soon).
+No manual publishing or branch management is required after setup.
 
-Pages
+---
 
-Models
+# Workflow Summary
 
-Localization resources
+- **Development is done on the main branch**
+- **On every push to main:**
+  - The Blazor WebAssembly app is built in Release mode
+  - Static files are generated using dotnet publish
+  - The contents of the published wwwroot folder are deployed to the gh-pages branch
+- **GitHub Pages serves the site from the gh-pages branch**
 
-Styling and assets
+---
 
-gh-pages branch
-Contains only the compiled static output (wwwroot) used by GitHub Pages.
+# Localization
 
-This separation keeps the source code clean and easy to review while ensuring a stable deployment.
+The application supports multiple languages using:
 
-Localization
+- **Microsoft.Extensions.Localization**
+- **Resource files (.resx)**
 
-The application supports multiple languages using .resx resource files.
+# Supported languages
 
-Language selection:
+- **English**
+- **Finnish**
 
-Stored in browser local storage
+The selected language is stored in browser storage and persists between sessions.
 
-Applied on application startup
+---
 
-Works without server-side middleware (Blazor WASM standard approach)
+# License
 
-Currently supported languages:
+This project is provided for portfolio and demonstration purposes.
 
-English
+You are welcome to explore the code and structure, but please do not reuse the design, assets, or content without permission.
 
-Finnish
+---
 
-Deployment
+# Author
 
-The application is published as a static site and hosted on GitHub Pages.
+**Juuso Savolainen**
 
-Deployment flow:
 
-Blazor WebAssembly project is built in Release mode
 
-The published wwwroot output is copied to the gh-pages branch
-
-GitHub Pages serves the site directly from the branch root
-
-Purpose
-
-This project is part of my professional portfolio and is continuously improved as I develop my skills further in:
-
-.NET ecosystem
-
-Frontend architecture
-
-Cloud-hosted applications
-
-Author
-
-Juuso Savolainen
