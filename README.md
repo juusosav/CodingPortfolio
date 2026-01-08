@@ -1,6 +1,6 @@
 # Coding Portfolio – Juuso Savolainen
 
-This repository contains the source code for my personal developer portfolio, built with **Blazor WebAssembly** and deployed using **GitHub Pages** with automated CI/CD (coming soon).
+This repository contains the source code for my personal developer portfolio, built with **Blazor WebAssembly** and deployed using **GitHub Pages** with automated CI/CD.
 
 The site is designed as a single-page application with smooth navigation, responsive layout, and bilingual support (English / Finnish). 
 The site showcases my skills, projects, and technical stack, and serves as a central hub for presenting my work.
@@ -105,7 +105,7 @@ https://localhost
 
 The application is deployed as a static site using GitHub Pages.
 
-Deployment is fully automated via GitHub Actions (coming soon).
+Deployment is fully automated via GitHub Actions.
 No manual publishing or branch management is required after setup.
 
 ---
