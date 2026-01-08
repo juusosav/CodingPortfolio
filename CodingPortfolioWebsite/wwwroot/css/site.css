@@ -1,6 +1,18 @@
 ﻿html, body {
     width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    overscroll-behavior: none;
+}
+
+#app {
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 html {
@@ -49,7 +61,7 @@ img {
 }
 
 .hero-section {
-    height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
