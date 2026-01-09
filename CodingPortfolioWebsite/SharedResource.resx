@@ -119,14 +119,11 @@
   </resheader>
   <data name="About_Bio1" xml:space="preserve">
     <value>I'm a C# / .NET developer with a passion for building web applications using Blazor.
-I enjoy creating interactive and user-friendly full-stack experiences using ASP. NET Core,
-Entity Framework, and SQL databases.</value>
+I enjoy creating interactive and user-friendly full-stack experiences.</value>
   </data>
   <data name="About_Bio2" xml:space="preserve">
-    <value>My background is in mainly residential customer services and employment services.
-This diverse background is a great asset to my journey in the IT world.
-So don't be a stranger! Contact me if you have software development needs and we
-can discuss the potential for cooperation.</value>
+    <value>My diverse background in residential customer services and employment services is a great asset to my journey in the IT world.
+So don't be a stranger! Feel free to contact me and we can discuss your software development needs.</value>
   </data>
   <data name="About_Title" xml:space="preserve">
     <value>About Me</value>

@@ -16,6 +16,7 @@
         {
             if (firstRender)
             {
+                await JS.InvokeVoidAsync("forceScrollTopOnRefresh");
                 await Task.Yield();
                 await JS.InvokeVoidAsync("initScrollAnimations");
             }

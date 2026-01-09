@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About_Bio1" xml:space="preserve">
-    <value>Olen C# ja .NET -kehittäjä, jonka intohimo on tehdä interaktiivisia sekä käyttäjä-lähtöisiä full-stack -ratkaisuja ASP.NET Coren, Entity Frameworkin ja SQL tietokantojen avulla.</value>
+    <value>Olen C# ja .NET -kehittäjä, jonka intohimo on tehdä interaktiivisia sekä käyttäjälähtöisiä full-stack -ratkaisuja.</value>
   </data>
   <data name="About_Bio2" xml:space="preserve">
-    <value>Osaamistaustani on pääasiassa kiinteistöalan asiakaspalvelussa sekä julkisessa työvoimahallinnossa. Monipuolinen taustani mahdollistaa IT-alalla menestymisen sekä kehittymisen ammattilaisena. Joten otathan yhteyttä mikäli sinulla on tarvetta ohjelmistokehitykselle, jotta voimme keskustella mahdollisesta yhteistyöstä.</value>
+    <value>Monipuolinen taustani kiinteistöalan asiakaspalvelussa sekä julkisessa työvoimahallinnossa mahdollistaa IT-alalla menestymisen sekä kehittymisen ammattilaisena. Joten otathan yhteyttä mikäli haluat keskustella ohjelmistokehitystarpeistasi.</value>
   </data>
   <data name="About_Title" xml:space="preserve">
     <value>Tietoa minusta</value>
