@@ -145,9 +145,9 @@
     <value>Lähettää...</value>
   </data>
   <data name="Contact_StatusMessageSent" xml:space="preserve">
-    <value>Viesti lähetetty onnistuneesti!</value>
+    <value>Viestisi on lähetetty. Otan sinuun yhteyttä pikaisesti kyselysi puolesta.</value>
   </data>
-  <data name="Contant_StatusMessageSendFailed" xml:space="preserve">
+  <data name="Contact_StatusMessageSendFailed" xml:space="preserve">
     <value>Viestin lähetys epäonnistui. Ole hyvä ja yritä myöhemmin uudelleen.</value>
   </data>
   <data name="HeroPhrase_Blazor" xml:space="preserve">

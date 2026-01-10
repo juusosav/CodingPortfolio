@@ -147,9 +147,9 @@ So don't be a stranger! Feel free to contact me and we can discuss your software
     <value>Sending...</value>
   </data>
   <data name="Contact_StatusMessageSent" xml:space="preserve">
-    <value>Message sent successfully!</value>
+    <value>Your message has been sent. I will contact you regarding your message promptly.</value>
   </data>
-  <data name="Contant_StatusMessageSendFailed" xml:space="preserve">
+  <data name="Contact_StatusMessageSendFailed" xml:space="preserve">
     <value>Failed to send message. Please try again later.</value>
   </data>
   <data name="HeroPhrase_Blazor" xml:space="preserve">

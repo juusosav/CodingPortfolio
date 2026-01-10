@@ -199,3 +199,8 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+.contact-sent-box {
+    max-width: 100%;
+    padding: 20rem 0;
+}
