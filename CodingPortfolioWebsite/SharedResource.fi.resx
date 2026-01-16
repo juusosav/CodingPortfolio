@@ -225,4 +225,7 @@
   <data name="NavMenu_BackToTop" xml:space="preserve">
     <value>Alkuun</value>
   </data>
+  <data name="Hero_CVLink" xml:space="preserve">
+    <value>https://drive.google.com/uc?export=download&amp;id=1AbIBv3AW4eL0phmXXPJ19vK76A9O3hVL</value>
+  </data>
 </root>
